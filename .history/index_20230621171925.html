@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>FOLLOWX</title>
+    <script type="module" crossorigin src="./static/js/index-960965ca.js"></script>
+    <link rel="stylesheet" href="./static/css/style-76270f95.css">
+  </head>
+  <body >
+    <div id="app"></div>
+    
+    <script>
+      global = globalThis
+      document.addEventListener('touchstart', function (event) {
+        if (event.touches.length > 1) {
+          event.preventDefault()
+        }
+      })
+      var lastTouchEnd = 0
+      document.addEventListener(
+        'touchend',
+        function (event) {
+          var now = new Date().getTime()
+          if (now - lastTouchEnd <= 300) {
+            event.preventDefault()
+          }
+          lastTouchEnd = now
+        },
+        false
+      )
+    </script>
+    <script>
+      var exports = {}
+    </script>
+  </body>
+</html>
