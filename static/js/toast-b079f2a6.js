@@ -1,0 +1,1 @@
+import{ak as n,a7 as g}from"./index-974bcf19.js";const i=s=>{const{t}=n.global;s=JSON.parse(JSON.stringify(s)).reason||s||"error";let e=s.lastIndexOf(":");var a=s.substring(e+1,s.length);a=a.replace(" ","").replace(/(.*)\./,"$1"),s=t(`errorMsg.${a}`).indexOf("errorMsg.")!=-1?a:t(`errorMsg.${a}`),g(s)};export{i as t};
